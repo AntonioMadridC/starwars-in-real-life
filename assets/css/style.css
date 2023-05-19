@@ -1,0 +1,46 @@
+.myBody {
+    position: relative;
+}
+
+.myBar {
+    position: relative;
+}
+
+.vertical {
+    position: absolute;
+    border-right: 4px solid lightgray;
+    height: 100%;
+    left: 72%;
+  }
+
+p {
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    left: 70%;
+    color: orange;
+}
+
+.card {
+    position: relative;
+}
+.spot {
+    position: absolute;
+    top: 0.9375rem;
+    left: 1.875rem;
+    font-size: 1.7rem;
+}
+
+.color-1 {
+    color: #f98071;
+}
+
+.color-2 {
+    color: #90ee90;
+}
+
+.color-3 {
+    color: #87cefa;
+}

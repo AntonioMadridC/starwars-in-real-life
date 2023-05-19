@@ -1,23 +1,44 @@
-document.getElementById("mainCharactersBox").addEventListener('mouseover', function () {
+//VAR para realizar la acción 5 veces por cada uno
+var mainCount = 1
+var secondaryCount = 6
+var extraCount = 11
 
-    for (let i = 1; i < 6; i++) {
-        getData(i, "mainCharacters", 1)
+function mainCharacterGet() {
+    if (mainCount < 6) {
+        getData(mainCount, "mainCharacters", 1)
+        mainCount ++
+        console.log(mainCount);
     }
-}, { once: true })
+}
+
+/* document.getElementById("mainCharactersBox").addEventListener('mouseover', function () {
+
+    if (mainCount < 6) {
+        getData(mainCount, "mainCharacters", 1)
+        mainCount ++
+        console.log(mainCount);
+    }
+}) */
 
 document.getElementById("secondaryCharactersBox").addEventListener('mouseover', function () {
 
-    for (let i = 6; i < 11; i++) {
-        getData(i, "secondaryCharacters", 2)
+    if (secondaryCount < 11) {
+        getData(secondaryCount, "secondaryCharacters", 2)
+        secondaryCount ++
+        console.log(secondaryCount);
     }
-}, { once: true })
+    
+})
 
 document.getElementById("extraCharactersBox").addEventListener('mouseover', function () {
 
-    for (let i = 11; i < 16; i++) {
-        getData(i, "extraCharacters", 3)
+    if (extraCount < 16) {
+        getData(extraCount, "extraCharacters", 3)
+        extraCount ++
+        console.log(extraCount);
     }
-}, { once: true })
+    
+})
 
 /* id es el número del personaje. 
 idSection es el nombre de la sección donde inyectar.

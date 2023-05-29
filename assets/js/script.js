@@ -87,7 +87,7 @@ function injectHtml(json, idSection, nColor) {
                             <i class="bi bi-circle-fill spot color-${nColor}"></i>
                             <h5 class="card-title ps-4">${name}</h5>
                             <p class="card-text ps-4">
-                            Estatura: ${height} cm.
+                            Estatura: ${height} cm. <br>
                             Peso: ${mass} kg.
                             </p>
                         </div>

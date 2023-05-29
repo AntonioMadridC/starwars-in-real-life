@@ -3,7 +3,10 @@ var mainCount = 1
 var secondaryCount = 6
 var extraCount = 11
 
-function mainCharacterGet() {
+
+//FUCIONES PARA INYECTAR DATOS EN CADA SECCIÓN
+// Secciones event listener comentadas ya que modificar el elemento padre desconecta el event listener- reemplazado por atributo onmousenenter en html
+function mainCharactersGet() {
     if (mainCount < 6) {
         getData(mainCount, "mainCharacters", 1)
         mainCount ++
@@ -20,7 +23,15 @@ function mainCharacterGet() {
     }
 }) */
 
-document.getElementById("secondaryCharactersBox").addEventListener('mouseover', function () {
+function secondaryCharactersGet() {
+    if (secondaryCount < 11) {
+        getData(secondaryCount, "secondaryCharacters", 2)
+        secondaryCount ++
+        console.log(secondaryCount);
+    }
+}
+
+/* document.getElementById("secondaryCharactersBox").addEventListener('mouseover', function () {
 
     if (secondaryCount < 11) {
         getData(secondaryCount, "secondaryCharacters", 2)
@@ -28,9 +39,17 @@ document.getElementById("secondaryCharactersBox").addEventListener('mouseover', 
         console.log(secondaryCount);
     }
     
-})
+}) */
 
-document.getElementById("extraCharactersBox").addEventListener('mouseover', function () {
+function extraCharactersGet() {
+    if (extraCount < 16) {
+        getData(extraCount, "extraCharacters", 3)
+        extraCount ++
+        console.log(extraCount);
+    }
+}
+
+/* document.getElementById("extraCharactersBox").addEventListener('mouseover', function () {
 
     if (extraCount < 16) {
         getData(extraCount, "extraCharacters", 3)
@@ -38,7 +57,7 @@ document.getElementById("extraCharactersBox").addEventListener('mouseover', func
         console.log(extraCount);
     }
     
-})
+}) */
 
 /* id es el número del personaje. 
 idSection es el nombre de la sección donde inyectar.
